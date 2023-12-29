@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Dates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@500&family=Libre+Franklin:wght@300;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+ 
+ <style>
+    /* Add styles for the animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<article>
+	<h1 class="reveal"><span>Dates</span><br/> we had together <3</h1>
+	<p class="reveal">Here are some of our past dates we had together (These r my fav ones)</p>	
+	<figure class="reveal">
+		<img src="https://i.pinimg.com/564x/57/6f/dd/576fdda4b565d1ab2e01817c8d5312f6.jpg" alt=" " title="">
+		<figcaption>First one </figcaption>
+	</figure>
+	<p class="reveal">I and u went on our first date?  It was our first date together nd maybe individual too. I ko to vishwas hi nahi hua tha ki tuuu date ko chal rhi mere naaaaal. I ko to khoob maza aaya tha and it was so wholesome</p>	
+
+	<p class="reveal">Late or soon but we'll surely re-create this one when we meeeet, Ugh I can't wait</p>	
+
+	<figure class="reveal">
+		<img src="https://i.pinimg.com/564x/08/8d/8e/088d8e4f8af1ed0b371e2e8695128685.jpg" alt="" title="">
+		<figcaption>Musuem</figcaption>
+	</figure>
+
+	<p class="reveal">Our museum date!! the date where u showed me ur kind nd loving side of youuu. Jab we will go for this date IRL we'll spend more time in cutlery area or after that we'll click bunch of Photus</p>	
+
+	<p class="reveal">Veryyyyy unreal  this feeling is, I just wish ki apan miley , apan saath pdhe nd be productive</p>	
+
+	<figure class="reveal">
+		<img src="https://i.pinimg.com/564x/64/c8/83/64c8831fa2f0a630a552a17d5d1e2deb.jpg" alt="" title="">
+		<figcaption>Room date</figcaption>
+	</figure>
+
+	<p class="reveal">Ek baaar we'd cozy roomdate tooooo.  Where I gave u kikat, we cooked maggie apan dance bhi kiye theyyyy <p>	
+
+	<figure class="reveal">
+		<img src="https://i.pinimg.com/564x/d1/ed/8e/d1ed8eafb759717923ab492415bedfa1.jpg" alt=" " title="">
+		<figcaption>Video-Calls</figcaption>
+	</figure>
+	<p class="reveal">You ke saaaaaaaath vc pr padhaii OH GAWDDDD kyutest date it is. I ko you ke messy hairs wala look kyutest :3 nd now you ke blister ke marks bhi kyutness ka part  haiiii YOU'RE MY MOON</p>	
+
+	<figure class="reveal">
+		<img src="https://i.pinimg.com/564x/9f/11/36/9f1136a1bcc9231194b9fb44993c008b.jpg" alt="" title="">
+		<figcaption>Home</figcaption>
+	</figure>
+	<p class="reveal">Our stargazing date was also a  kyut and romantic kyunki obv it was planned by youuuuuu . Not only these dates also our Tent,fireworks,Ice-cream,Gurudwara dates was wholesome.,<br>I just want us to stay long,strong,happy and kyutest.  PS: In these dates,there's hidden message for u :3 (Hint - read first word of each line)<p>	
+
+	<p class="reveal"></p>	
+
+</article>
+<!-- partial -->
+   <script>
+    // Add a scroll event listener to trigger the reveal animation
+    window.addEventListener('scroll', revealOnScroll);
+
+    function revealOnScroll() {
+      const elements = document.querySelectorAll('.reveal');
+      elements.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight / 1.2) {
+          element.classList.add('revealed');
+        }
+      });
+    }
+
+    // Initial check in case some elements are already in view when the page loads
+    revealOnScroll();
+  </script>
+</body>
+</html>
